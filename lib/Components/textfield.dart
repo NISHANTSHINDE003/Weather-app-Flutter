@@ -7,8 +7,10 @@ import '../Constant.dart' as constant;
 class password extends StatelessWidget {
   final String text;
   final bool isPassword;
+  final Function(String) onChanged;
+
   const password({
-    super.key, required this.text, required this.isPassword,
+    super.key, required this.text, required this.isPassword, required this.onChanged,
   });
 
   @override
@@ -16,6 +18,7 @@ class password extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextField(
+        onChanged: onChanged,
         style: TextStyle(
           color: constant.emailPrimary,
         ),
