@@ -23,7 +23,34 @@ class _LoginState extends State<Login> {
 
       password(text: 'Email', isPassword: false),
        password(text: 'Password', isPassword: true),
+      ClipRRect(
+        borderRadius: BorderRadius.circular(10.0),
+        child: Container(
+          width: 100,
+          height: 60,
+          color: constant.emailPrimary,
+          child: TextButton(
+            style: TextButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                side: BorderSide(
+                  width: 2,
+                  color: constant.textPrimary,
+                )
 
+              )
+            ),
+              onPressed: (){}, child: Text(
+            'login',
+            style: TextStyle(
+              fontSize: 30.0,
+              color: constant.textPrimary,
+
+          ),
+          )
+          ),
+        ),
+      ),
       Expanded(child: Container())
 
 
