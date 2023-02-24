@@ -19,10 +19,13 @@ class _LoginState extends State<Login> {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Expanded(child: Container()),
+          Expanded(child: Container()),
         Image.network('https://ck12live.s3.ap-south-1.amazonaws.com/user/5f688627ac992228651c21b1/classroom/original/1607234971537-login.png'),
 
       password(text: 'Email', isPassword: false),
        password(text: 'Password', isPassword: true),
+          Expanded(child: Container()),
       ClipRRect(
         borderRadius: BorderRadius.circular(10.0),
         child: Container(
@@ -35,7 +38,7 @@ class _LoginState extends State<Login> {
                 borderRadius: BorderRadius.circular(10.0),
                 side: BorderSide(
                   width: 2,
-                  color: constant.textPrimary,
+                  color: constant.emailPrimary,
                 )
 
               )
@@ -51,7 +54,8 @@ class _LoginState extends State<Login> {
           ),
         ),
       ),
-      Expanded(child: Container())
+      Expanded(child: Container()),
+          Expanded(child: Container())
 
 
 
